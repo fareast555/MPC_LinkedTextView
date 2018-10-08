@@ -1,6 +1,5 @@
 //
-//  LinkedTextView.h
-//  MPC_UniversalModalWebView
+//  MPC_LinkedTextView.h
 //
 //  Created by Michael Critchley on 2018/09/26.
 //  Copyright © 2018 Michael Critchley. All rights reserved.
