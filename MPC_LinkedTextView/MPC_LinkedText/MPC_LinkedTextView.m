@@ -34,16 +34,16 @@
 - (void)updateTextViewWithFullText:(NSString *)fullText linkTriggerText:(NSString *)triggerText linkURLString:(NSString *)urlString
 {
     //Create a mutable string based on the full text
-    NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc]initWithString:fullText attributes:nil];
+    NSMutableAttributedString *mutableString = [[NSMutableAttributedString alloc]initWithString:fullText attributes:nil];
     
     //Add the link attribute across the range of the target text
-    [aStr addAttribute:NSLinkAttributeName value:urlString range:[fullText rangeOfString:triggerText]];
+    [mutableString addAttribute:NSLinkAttributeName value:urlString range:[fullText rangeOfString:triggerText]];
     
     //Add any other font or color bling as needed
-    [aStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:18 weight:UIFontWeightMedium] range:NSMakeRange(0, [fullText length])];
+    [mutableString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:18 weight:UIFontWeightMedium] range:NSMakeRange(0, [fullText length])];
     
     //Set the mutable text to the textfield
-    [self setAttributedText:aStr];
+    [self setAttributedText:mutableString];
 }
 
 #pragma mark - Configure
