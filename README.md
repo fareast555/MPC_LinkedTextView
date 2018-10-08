@@ -1,5 +1,8 @@
 #MPC_LinkedTextView 
-An Objective-C demo app with a custom textview cell that is ready to display link-embedded text. Your system will handle clicks automatically. Easy peasy!
+An Objective-C demo app with a custom textview cell that is ready to display link-embedded text. Your system will handle clicks automatically. Easy peasy
+
+![Example links (the emoji are also linked)](https://github.com/fareast555/MPC_LinkedTextView/blob/master/screenShot.png)
+
 
 ## Requirements
 
